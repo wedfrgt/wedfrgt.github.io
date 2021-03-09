@@ -1689,7 +1689,7 @@ pre code {
   width: 100%;
 }
 .with-love {
-  color: #ff0000;
+  color: #FF6699;
   display: inline-block;
   margin: 0 5px;
   animation: icon-animate 1.33s ease-in-out infinite;
@@ -2820,6 +2820,11 @@ ul.breadcrumb li:last-child {
     padding: 10px 12px;
   }
 }
+/*
+
+各类自定义部件添加的位置
+
+*/
 body {
   background: url("/assets/bg.jpg");
   background-repeat: no-repeat;
@@ -2834,4 +2839,14 @@ body {
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.footer-inner {
+  color: #281f1d;
+}
+div.header-inner nav.site-nav ul li a {
+  color: #ffb6c1;
+}
+.site-brand-container {
+  background: #ffc0cb;
+  border-radius: 20px 20px 0 0;
 }
