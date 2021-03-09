@@ -14,9 +14,9 @@
   --btn-default-bg: #fff;
   --btn-default-color: #555;
   --btn-default-border-color: #555;
-  --btn-default-hover-bg: #222;
+  --btn-default-hover-bg: #ffc0cb;
   --btn-default-hover-color: #fff;
-  --btn-default-hover-border-color: #222;
+  --btn-default-hover-border-color: #ea9999;
   --highlight-background: #f0f0f0;
   --highlight-foreground: #444;
   --highlight-gutter-background: #dedede;
@@ -2833,6 +2833,9 @@ body {
   opacity: 0.85;
   background-size: cover;
 }
+.footer-inner {
+  color: #281f1d;
+}
 .post {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -2840,13 +2843,28 @@ body {
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
-.footer-inner {
-  color: #281f1d;
-}
-div.header-inner nav.site-nav ul li a {
-  color: #ffb6c1;
-}
 .site-brand-container {
-  background: #ffc0cb;
+  background: #ffb6c1;
   border-radius: 20px 20px 0 0;
+}
+.header-inner nav ul li a {
+  color: #a9a9a9;
+}
+.main-menu .menu-item-active::after {
+  background: #a9a9a9;
+  height: 10px;
+  width: 10px;
+}
+.btn {
+  border-radius: 15px;
+  border: 2px solid #ffc0cb;
+  color: #fffafa;
+  background: #ffb6c1;
+}
+body > main > header > aside > div > div.back-to-top.animated.back-to-top-on {
+  margin-top: 0px;
+}
+::selection {
+  color: #fff;
+  background: #ffb6c1;
 }

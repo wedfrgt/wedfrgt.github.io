@@ -96,7 +96,7 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">  
-  <!-- script src="/live2d-widget/autoload.js"></script-->
+  <!-- script src="/live2d-widget/autoload.js"></script -->
   <script src="https://wedfrgt.github.io/live2d-widget/autoload.js"></script>
 
   <div class="headband"></div>
@@ -154,7 +154,14 @@
   <aside class="sidebar">
 
     <div class="sidebar-inner sidebar-overview-active">
-      <ul class="sidebar-nav">
+      <!-- 计时器代码来源于https://kalialbert.github.io/ -->
+	  <div style="">
+        <canvas id="canvas" style="width:60%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+      </div>
+	  
+	  <script src = "/js/timer.js"></script>
+	  
+	  <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
         </li>
@@ -181,20 +188,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -218,11 +225,28 @@
 
         </div>
       </div>
+	  
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=52 src="//music.163.com/outchain/player?type=0&id=6651768649&auto=1&height=32"></iframe>
+
         <div class="back-to-top animated" role="button">
           <i class="fa fa-arrow-up"></i>
           <span>0%</span>
         </div>
-    </div>
+	
+	
+	  <script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"></script>
+	  <script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"></script>
+	  <div class="widget-wrap">
+		<h3 class="widget-title">标签云</h3>
+		<div id="myCanvasContainer" class="widget tagcloud">
+          <canvas width="200" height="200" id="resCanvas" style="width=100%">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MarkDown/" rel="tag">MarkDown</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%99%E5%AD%A6/" rel="tag">教学</a><span class="tag-list-count">8</span></li></ul>
+          </canvas>
+        </div>
+	  </div>
+	
+	
+	</div>
   </aside>
   <div class="sidebar-dimmer"></div>
 
@@ -260,10 +284,10 @@
       
       <div class="post-body"><div class="category-all-page">
   <div class="category-all-title">
-    目前共计 2 个分类
+    目前共计 1 个分类
   </div>
   <div class="category-all">
-    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Test/">Test</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B5%8B%E8%AF%95/">测试</a><span class="category-list-count">1</span></li></ul>
+    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/MarkDown%E7%9B%B8%E5%85%B3/">MarkDown相关</a><span class="category-list-count">8</span></li></ul>
   </div>
 </div>
 
@@ -319,7 +343,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">0k</span>
+    <span title="站点总字数">2k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
@@ -335,7 +359,7 @@
 <script>
     var now = new Date();
     function createtime() {
-        var grt= new Date("01/05/2020 00:00:00");//此处修改你的建站时间或者网站上线时间
+        var grt= new Date("03/06/2021 00:00:00");//此处修改你的建站时间或者网站上线时间
         now.setTime(now.getTime()+250);
         days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
         hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
@@ -370,8 +394,9 @@ setInterval("createtime()",250);
 
 
 
-   <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-   
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <!-- 雪花特效2 -->
+  <script type="text/javascript" src="/js/snow2.js"></script>
 
 </body>
 </html>
